@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+ 
+* {
+    box-sizing: border-box;
+ }
+
+body {
+    font-family: 'Quicksand' , sans-serif;
+    margin: 0;
+    padding: 0;
+ }
+ header {
+    display: inline;
+ }
+ h2 {
+    color: #f54337
+ }
+  
+ h3 {
+    color: #f54337
+ }
+ footer {
+    padding: 20px;
+    color: white;
+    background-color: #f54337;
+    text-align: center;
+    font-weight: bold;
+ }
+ nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+ }
+ nav a:hover {
+    font-weight: bold;
+ }
+ .profile header {
+    text-align: center;
+ }
+ .featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+ }
+ .profile img {
+    width: 200px;
+ }
+ .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+ }
+ .jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #f54337;
+    text-align: center;
+    color: white;
+ }
+ nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+ }
+ nav {
+    background-color: #e42020;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+ }
+ main {
+    padding: 20px;
+ }
+ #content {
+    float: right;
+    width: 74%;
+ }
+ aside {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+ }
+ main {
+    padding: 20px;
+    overflow: auto;
+ }
+ @media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+ }
+ tr {
+     text-align: left;
+ }
+ .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
