@@ -153,6 +153,23 @@
                     <span class="bg-slate-100 px-2 py-1 rounded">Node.js</span>
                 </div>
             </div>
+
+            <div class="group bg-white rounded-2xl p-6 border-2 border-slate-100 hover:border-emerald-500 transition-all duration-300 hover:shadow-xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 bg-emerald-500 text-white text-[10px] font-bold px-3 py-1 rounded-bl-xl">APP</div>
+                <div class="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-500 text-2xl mb-4 group-hover:scale-110 transition-transform">
+                    <i class="fa-brands fa-android"></i>
+                </div>
+                <a href="https://download.hikariclouds.my.id/" target="_blank" class="block">
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-emerald-500 transition-colors">TikMedia Downloader</h3>
+                </a>
+                <p class="text-slate-500 text-sm mb-4 leading-relaxed">
+                    Aplikasi Android untuk mengunduh media dengan mudah dan cepat. Dirancang untuk memberikan pengalaman mobile yang mulus.
+                </p>
+                <div class="flex gap-2 text-xs font-bold text-slate-400">
+                    <span class="bg-slate-100 px-2 py-1 rounded">Android</span>
+                    <span class="bg-slate-100 px-2 py-1 rounded">Mobile App</span>
+                </div>
+            </div>
         </div>
 
         <div class="bg-slate-50 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6 border border-slate-100">
@@ -236,15 +253,3 @@
             }, 1500);
 
             // Auto Hide after 8 seconds
-            setTimeout(() => {
-                closeToast();
-            }, 8000);
-        });
-
-        function closeToast() {
-            const toast = document.getElementById('greeting-toast');
-            toast.classList.add('translate-y-24', 'opacity-0');
-        }
-    </script>
-</body>
-</html>
